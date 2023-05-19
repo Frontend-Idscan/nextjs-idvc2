@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-idvc-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@idscan/idvc2": "^2.5.2",
+    "@types/node": "20.2.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "next": "13.4.2",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4"
+  }
+}
