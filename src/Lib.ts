@@ -57,7 +57,8 @@ export const getDefaultWebLibConfiguration = () => ({
     realFaceMode: 'none',
     documentTypes: getDefaultDocumentTypes(),
     submit: (data: any) => {
-        alert('Check console for submitted data')
+        console.clear();
+        alert('Check console for submitted data');
         console.log('submitted data', data);
     },
     licenseKey: process.env.NEXT_PUBLIC_LICENSE_KEY || ''
