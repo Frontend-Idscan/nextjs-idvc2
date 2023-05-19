@@ -48,7 +48,7 @@ const getDefaultDocumentTypes = () => ([
 
 export const getDefaultWebLibConfiguration = () => ({
     fixFrontOrientAfterUpload: true,
-    useCDN: true,
+    useCDN: false,
     el: "videoCapturingEl",
     isShowDocumentTypeSelect: false,
     isShowGuidelinesButton: false,

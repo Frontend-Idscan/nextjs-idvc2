@@ -6,6 +6,7 @@ import {getDefaultWebLibConfiguration} from '../Lib';
 class IDVCComponent extends React.Component {
     render() {
         const config = getDefaultWebLibConfiguration();
+        console.log('config.licenseKey', config.licenseKey);
         const widget = new IDVC(config);
         return '';
     }
