@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+// import { Inter } from 'next/font/google'
+import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic';
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 const cssStyles = ".idvc {\n/* library's font family*/\n  --font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n\n/* radius of retake, continue, submit buttons*/\n  --btn-border-radius-big: 4px;\n\n/* radius of the manual switch button\nradius of the messagebox*/\n  --btn-border-radius-small: 4px;\n\n/* 'select document type' menus's checkmark*/\n  --color-text-secondary-light: #C4C4C4;\n\n/* success frame on capturing*/\n  --color-positive-light: #17EA4C;\n\n/* message box's default border color\n'select document type' menus's devider*/\n  --border-color-divider: #C0C0C0;\n\n/* primary button hover, focus colors*/\n  --color-primary-light-2: #DCE7FD;\n\n/* transparent button hover and focus background color*/\n  --color-primary-light-7: #85AAF7;\n\n/* transparent button border hover, focus colors\n'select document type' menus's selected item background*/\n  --color-primary-light-9: #EEF3FE;\n\n/* primary button active colors\ntransparent button active font color and border color*/\n  --color-primary-dark-2: #080D18;\n\n/* background of the bottom part of the active step in 'steps' section\n'type not defined' select background of the modal window\nscrollbar of 'result' modal window*/\n  --color-background-subheader: #F5F6F9;\n\n/* uploader's background\nbackground of 'result' modal window container\nbackground of 'type not defined' modal window\nbackground of 'document type-hint’ section*/\n  --color-background-white: #FFF;\n\n/* border of 'type not defined' modal window select\nborder of 'document type-hint' section\nborders of top part in 'steps' section\nbottom icons of inactive step in 'steps' section\nimage background  in 'steps' section*/\n  --border-color-base: #DCDFE6;\n\n/* background of primary buttons\nactive step name, icon, and bottom line of the active step in 'steps' section\nuploader labels, border\nmanual take picture button in video capturing\nchange the document type in 'document type-hint' section\nstep name on hover in 'steps' section\nguideline inscription\nbackground of the upload icon in the uploader\nuploader's emphasized descriptions\ndisabled primary buttons\ndisabled button border\nspinner's color*/\n  --color-primary: #35F432;\n\n/* succeeded steps in 'steps' section\nface shape when capturing the video in face step\ncapture progress\nvalid sign of 'result' modal window container\nhints on video capture\nbackground of uploader's success sign*/\n  --color-success: #13CE66;\n\n/* background and bottom border of the step error in 'steps' section\nheader of 'type not defined' modal window\ninvalid sign of 'result' modal window container\nlicense error text*/\n  --color-danger: #FF4949;\n\n/* warning sign of uploader*/\n  --color-warning: #FFC632;\n\n/* scrollbar of 'result' modal window\nlibrary version\ndescriptions of the uploader\nclose sign of 'result' modal window\nname of the inactive step in 'steps' section*/\n  --color-text-secondary: #909399;\n\n/* face shape icon in video capturing when the face is not detected at the face step\nshadow of 'type not defined' modal window\ncaption of 'type not defined' modal window select\nuploader's bold descriptions\nshadow of 'result' modal window\nbottom border of 'result' modal window row\noptions of change the document type in 'document type-hint' section\nuploader's error sign stroke\nuploader's error description*/\n  --color-black: #000;\n\n/* caption of buttons\nborder and caption of manual take picture button\nupload icon\nheader description of 'type not defined' modal window\nuploader success sign's checkmark\ndescription of capture progress*/\n  --color-white: #FFF;\n\n}"
 
@@ -27,7 +27,7 @@ export default function Home() {
         <style id="onboarding-css-variables">${cssVariables}</style>
         <style id="onboarding-css-config">${cssStyles}</style>
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={`${styles.main}`}>
         <h1>Next.js & IDVC2 App</h1>
         <div id="videoCapturingEl" className={styles.videoCapturingEl}>
 
