@@ -1,13 +1,15 @@
 import React from 'react';
-import IDVC from '@idscan/idvc2';
 import '@idscan/idvc2/dist/css/idvc.css';
 import {getDefaultWebLibConfiguration} from '../Lib';
 
 class IDVCComponent extends React.Component {
     render() {
         const config = getDefaultWebLibConfiguration();
-        const widget = new IDVC(config);
-        return '';
+        import('@idscan/idvc2').then(IDVC => {
+            const widget = new IDVC.idvc.default(config);
+        })
+
+        return <div></div>;
     }
 }
 

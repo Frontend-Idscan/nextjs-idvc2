@@ -5,36 +5,36 @@ const getDefaultDocumentTypes = () => ([
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
             { type: 'pdf', name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
-            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+            // { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     },
-    {
-        isActive: true,
-        type: 'Passport',
-        steps: [
-            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-        ]
-    },
-    {
-        isActive: true,
-        type: 'PassportCard',
-        steps: [
-            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-        ]
-    },
-    {
-        isActive: true,
-        type: 'GreenCard',
-        steps: [
-            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-        ]
-    },
+    // {
+    //     isActive: true,
+    //     type: 'Passport',
+    //     steps: [
+    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+    //     ]
+    // },
+    // {
+    //     isActive: true,
+    //     type: 'PassportCard',
+    //     steps: [
+    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+    //     ]
+    // },
+    // {
+    //     isActive: true,
+    //     type: 'GreenCard',
+    //     steps: [
+    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+    //     ]
+    // },
     {
         isActive: true,
         type: 'InternationalId',
@@ -60,6 +60,10 @@ export const getDefaultWebLibConfiguration = () => ({
         console.clear();
         alert('Check console for submitted data');
         console.log('submitted data', data);
+    },
+    onChange(data: any) {
+        console.log('change')
+        console.log(data)
     },
     licenseKey: process.env.NEXT_PUBLIC_LICENSE_KEY || ''
 })
