@@ -237,6 +237,6 @@ onmessage = function(param) {
     }
 };
 
-module.exports['idvc'] = __webpack_exports__;
+exports.idvc = __webpack_exports__;
 /******/ })()
 ;
