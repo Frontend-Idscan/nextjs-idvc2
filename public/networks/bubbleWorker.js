@@ -1,4 +1,3 @@
-var idvc;
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
@@ -237,6 +236,6 @@ onmessage = function(param) {
     }
 };
 
-exports.idvc = __webpack_exports__;
+// exports.idvc = __webpack_exports__;
 /******/ })()
 ;
