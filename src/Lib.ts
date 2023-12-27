@@ -56,6 +56,8 @@ export const getDefaultWebLibConfiguration = () => ({
     autoContinue: true,
     realFaceMode: 'none',
     documentTypes: getDefaultDocumentTypes(),
+    chunkPublicPath: 'https://neurons.cdn.idscan.net/2.8.0-next',
+    networkUrl: 'https://neurons.cdn.idscan.net/2.8.0-next',
     submit: (data: any) => {
         console.clear();
         alert('Check console for submitted data');
