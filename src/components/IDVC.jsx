@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
-import '@idscan/idvc2/dist/css/idvc.css';
 import {getDefaultWebLibConfiguration} from '../Lib';
 
 const IDVCComponent = () => {
     useEffect(() => {
+      const scriptLink = 'https://neurons.cdn.idscan.net/2.8.5-next/idvc.js';
+      const stylesLink = 'https://neurons.cdn.idscan.net/2.8.5-next/idvc.css'
 
       let script = document.createElement('script');
-      script.src = 'https://neurons.cdn.idscan.net/2.8.5-next/idvc.js';
+      script.src = scriptLink;
 
       script.onload = function () {
         console.log('Script has been loaded and executed');
@@ -19,11 +20,18 @@ const IDVCComponent = () => {
       };
 
       document.head.appendChild(script);
-      // const config = getDefaultWebLibConfiguration();
-      // const widget = new window.IDVC(config);
-        // import('@idscan/idvc2').then(IDVC => {
-        //     const widget = new IDVC.idvc.default(config);
-        // })
+
+      let link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = stylesLink;
+      link.onload = function () {
+        console.log('Styles have been loaded');
+      };
+      link.onerror = function (e) {
+        console.log('Error loading styles', e);
+      };
+      document.head.appendChild(link);
+
     }, []);
 
     return <div></div>;
