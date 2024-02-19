@@ -5,7 +5,7 @@ const getDefaultDocumentTypes = () => ([
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
             { type: 'pdf', name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
-            // { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     },
     // {
@@ -17,15 +17,15 @@ const getDefaultDocumentTypes = () => ([
     //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
     //     ]
     // },
-    // {
-    //     isActive: true,
-    //     type: 'PassportCard',
-    //     steps: [
-    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-    //     ]
-    // },
+    {
+        isActive: true,
+        type: 'PassportCard',
+        steps: [
+            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+            { type: 'mrz', name: 'Passport Back', mode: { uploader: true, video: true } },
+            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+        ]
+    },
     // {
     //     isActive: true,
     //     type: 'GreenCard',
@@ -40,7 +40,7 @@ const getDefaultDocumentTypes = () => ([
         type: 'InternationalId',
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+            { type: 'back', name: 'Document Back', mode: { uploader: true, video: true } },
             { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     }
@@ -56,8 +56,8 @@ export const getDefaultWebLibConfiguration = () => ({
     autoContinue: true,
     realFaceMode: 'none',
     documentTypes: getDefaultDocumentTypes(),
-    chunkPublicPath: 'https://neurons.cdn.idscan.net/2.8.0-next',
-    networkUrl: 'https://neurons.cdn.idscan.net/2.8.0-next',
+    chunkPublicPath: 'https://neurons.cdn.idscan.net/2.8.5-next',
+    networkUrl: 'https://neurons.cdn.idscan.net/2.8.5-next',
     submit: (data: any) => {
         console.clear();
         alert('Check console for submitted data');

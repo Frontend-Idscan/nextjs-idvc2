@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@idscan/idvc2": "file:idscan-idvc2-2.8.0.tgz",
+    "@idscan/idvc2": "file:idscan-idvc2-2.8.5-next.tgz",
     "@types/node": "20.2.0",
     "@types/react-dom": "^17.0.2",
     "axios": "^1.6.2",

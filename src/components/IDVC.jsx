@@ -6,7 +6,7 @@ const IDVCComponent = () => {
     useEffect(() => {
 
       let script = document.createElement('script');
-      script.src = 'https://neurons.cdn.idscan.net/2.8.0-next/idvc.js';
+      script.src = 'https://neurons.cdn.idscan.net/2.8.5-next/idvc.js';
 
       script.onload = function () {
         console.log('Script has been loaded and executed');

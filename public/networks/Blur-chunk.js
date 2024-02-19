@@ -1,1 +1,596 @@
-"use strict";(self.webpackChunkidvc=self.webpackChunkidvc||[]).push([[311],{4550:(e,n,r)=>{function t(e,n,r,t,o,i,a){try{var u=e[i](a),c=u.value}catch(l){return void r(l)}u.done?n(c):Promise.resolve(c).then(t,o)}function o(e,n,r){return n in e?Object.defineProperty(e,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[n]=r,e}function i(e){for(var n=1;n<arguments.length;n++){var r=null!=arguments[n]?arguments[n]:{},t=Object.keys(r);"function"===typeof Object.getOwnPropertySymbols&&(t=t.concat(Object.getOwnPropertySymbols(r).filter((function(e){return Object.getOwnPropertyDescriptor(r,e).enumerable})))),t.forEach((function(n){o(e,n,r[n])}))}return e}function a(e,n){var r,t,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:u(0),throw:u(1),return:u(2)},"function"===typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function u(i){return function(u){return function(i){if(r)throw new TypeError("Generator is already executing.");for(;a;)try{if(r=1,t&&(o=2&i[0]?t.return:i[0]?t.throw||((o=t.return)&&o.call(t),0):t.next)&&!(o=o.call(t,i[1])).done)return o;switch(t=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,t=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=(o=a.trys).length>0&&o[o.length-1])&&(6===i[0]||2===i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=n.call(e,a)}catch(u){i=[6,u],t=0}finally{r=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,u])}}}r.d(n,{o:()=>l});var u="application/javascript",c=function(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=i({skipSameOrigin:!0,useBlob:!0},n);return!e.includes("://")||e.includes(window.location.origin)?Promise.resolve(e):new Promise((function(n,t){return fetch(e).then((function(e){return e.text()})).then((function(t){var o=new URL(e).href.split("/");o.pop();var i="const _importScripts = importScripts;\nconst _fixImports = (url) => new URL(url, '".concat("".concat(o.join("/"),"/"),"').href;\nimportScripts = (...urls) => _importScripts(...urls.map(_fixImports));"),a="data:".concat(u,",").concat(encodeURIComponent(i+t));r.useBlob&&(a=URL.createObjectURL(new Blob(['importScripts("'.concat(a,'")')],{type:u}))),n(a)})).catch(t)}))},l=function(){var e,n=(e=function(e){var n;return a(this,(function(r){switch(r.label){case 0:return[4,c(e)];case 1:return n=r.sent(),[2,new Worker(n)]}}))},function(){var n=this,r=arguments;return new Promise((function(o,i){var a=e.apply(n,r);function u(e){t(a,o,i,u,c,"next",e)}function c(e){t(a,o,i,u,c,"throw",e)}u(void 0)}))});return function(e){return n.apply(this,arguments)}}()},6790:(e,n,r)=>{r.r(n),r.d(n,{default:()=>b});var t=r(7286);function o(e,n,r,t,o,i,a){try{var u=e[i](a),c=u.value}catch(l){return void r(l)}u.done?n(c):Promise.resolve(c).then(t,o)}function i(e,n){for(var r=0;r<n.length;r++){var t=n[r];t.enumerable=t.enumerable||!1,t.configurable=!0,"value"in t&&(t.writable=!0),Object.defineProperty(e,t.key,t)}}function a(e,n){var r,t,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:u(0),throw:u(1),return:u(2)},"function"===typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function u(i){return function(u){return function(i){if(r)throw new TypeError("Generator is already executing.");for(;a;)try{if(r=1,t&&(o=2&i[0]?t.return:i[0]?t.throw||((o=t.return)&&o.call(t),0):t.next)&&!(o=o.call(t,i[1])).done)return o;switch(t=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,t=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=(o=a.trys).length>0&&o[o.length-1])&&(6===i[0]||2===i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=n.call(e,a)}catch(u){i=[6,u],t=0}finally{r=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,u])}}}var u=function(){function e(n){var r,t,o;!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),o=void 0,(t="worker")in(r=this)?Object.defineProperty(r,t,{value:o,enumerable:!0,configurable:!0,writable:!0}):r[t]=o,this.worker=n,this.worker.postMessage({fn:"init"})}var n,r,t;return n=e,r=[{key:"process",value:function(e){var n=this;return new Promise((function(r){n.worker.postMessage({fn:"process",iData:e}),n.worker.onmessage=function(){var e,n=(e=function(e){var n;return a(this,(function(t){return n=e.data.blurConfidence,r(n),[2]}))},function(){var n=this,r=arguments;return new Promise((function(t,i){var a=e.apply(n,r);function u(e){o(a,t,i,u,c,"next",e)}function c(e){o(a,t,i,u,c,"throw",e)}u(void 0)}))});return function(e){return n.apply(this,arguments)}}()}))}},{key:"drop",value:function(){this.worker.postMessage({fn:"drop"})}}],r&&i(n.prototype,r),t&&i(n,t),e}(),c=r(4550),l=r(4328);function s(e,n,r,t,o,i,a){try{var u=e[i](a),c=u.value}catch(l){return void r(l)}u.done?n(c):Promise.resolve(c).then(t,o)}function f(e){return function(){var n=this,r=arguments;return new Promise((function(t,o){var i=e.apply(n,r);function a(e){s(i,t,o,a,u,"next",e)}function u(e){s(i,t,o,a,u,"throw",e)}a(void 0)}))}}function p(e,n){var r,t,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:u(0),throw:u(1),return:u(2)},"function"===typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function u(i){return function(u){return function(i){if(r)throw new TypeError("Generator is already executing.");for(;a;)try{if(r=1,t&&(o=2&i[0]?t.return:i[0]?t.throw||((o=t.return)&&o.call(t),0):t.next)&&!(o=o.call(t,i[1])).done)return o;switch(t=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,t=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=(o=a.trys).length>0&&o[o.length-1])&&(6===i[0]||2===i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=n.call(e,a)}catch(u){i=[6,u],t=0}finally{r=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,u])}}}const b=f((function(){var e,n;return p(this,(function(r){switch(r.label){case 0:return[4,(0,c.o)("".concat(l.Z.chunkPublicPath,"blurWorker.js"))];case 1:return e=r.sent(),n=new u(e),t.Z.setModule("module","blur",n),[2]}}))}))}}]);
+"use strict";
+(self["webpackChunkIDVC"] = self["webpackChunkIDVC"] || []).push([[311],{
+
+/***/ 4550:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   o: () => (/* binding */ loadWorker)
+/* harmony export */ });
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+    try {
+        var info = gen[key](arg);
+        var value = info.value;
+    } catch (error) {
+        reject(error);
+        return;
+    }
+    if (info.done) {
+        resolve(value);
+    } else {
+        Promise.resolve(value).then(_next, _throw);
+    }
+}
+function _async_to_generator(fn) {
+    return function() {
+        var self = this, args = arguments;
+        return new Promise(function(resolve, reject) {
+            var gen = fn.apply(self, args);
+            function _next(value) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+            }
+            function _throw(err) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+            }
+            _next(undefined);
+        });
+    };
+}
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function _ts_generator(thisArg, body) {
+    var f, y, t, g, _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    };
+    return(g = {
+        next: verb(0),
+        "throw": verb(1),
+        "return": verb(2)
+    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g);
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(_)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var type = 'application/javascript';
+var getCrossOriginWorkerURL = function(originalWorkerUrl) {
+    var _options = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+    var options = _object_spread({
+        skipSameOrigin: true,
+        useBlob: true
+    }, _options);
+    if (!originalWorkerUrl.includes('://') || originalWorkerUrl.includes(window.location.origin)) {
+        // The same origin - Worker will run fine
+        return Promise.resolve(originalWorkerUrl);
+    }
+    // eslint-disable-next-line no-promise-executor-return
+    return new Promise(function(resolve, reject) {
+        return fetch(originalWorkerUrl).then(function(res) {
+            return res.text();
+        }).then(function(codeString) {
+            var workerPath = new URL(originalWorkerUrl).href.split('/');
+            workerPath.pop();
+            var importScriptsFix = "const _importScripts = importScripts;\nconst _fixImports = (url) => new URL(url, '".concat("".concat(workerPath.join('/'), "/"), "').href;\nimportScripts = (...urls) => _importScripts(...urls.map(_fixImports));");
+            var finalURL = "data:".concat(type, ",").concat(encodeURIComponent(importScriptsFix + codeString));
+            if (options.useBlob) {
+                finalURL = URL.createObjectURL(new Blob([
+                    'importScripts("'.concat(finalURL, '")')
+                ], {
+                    type: type
+                }));
+            }
+            resolve(finalURL);
+        }).catch(reject);
+    });
+};
+var loadWorker = function() {
+    var _ref = _async_to_generator(function(workerUrl) {
+        var workerURL;
+        return _ts_generator(this, function(_state) {
+            switch(_state.label){
+                case 0:
+                    return [
+                        4,
+                        getCrossOriginWorkerURL(workerUrl)
+                    ];
+                case 1:
+                    workerURL = _state.sent();
+                    return [
+                        2,
+                        new Worker(workerURL)
+                    ];
+            }
+        });
+    });
+    return function loadWorker(workerUrl) {
+        return _ref.apply(this, arguments);
+    };
+}();
+
+
+/***/ }),
+
+/***/ 6790:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ loaderBlur)
+});
+
+// EXTERNAL MODULE: ./src/controllers/ModuleController.ts + 1 modules
+var ModuleController = __webpack_require__(7286);
+;// CONCATENATED MODULE: ./src/modules/blurModule.ts
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+    try {
+        var info = gen[key](arg);
+        var value = info.value;
+    } catch (error) {
+        reject(error);
+        return;
+    }
+    if (info.done) {
+        resolve(value);
+    } else {
+        Promise.resolve(value).then(_next, _throw);
+    }
+}
+function _async_to_generator(fn) {
+    return function() {
+        var self = this, args = arguments;
+        return new Promise(function(resolve, reject) {
+            var gen = fn.apply(self, args);
+            function _next(value) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+            }
+            function _throw(err) {
+                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+            }
+            _next(undefined);
+        });
+    };
+}
+function _class_call_check(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+        throw new TypeError("Cannot call a class as a function");
+    }
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _create_class(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _ts_generator(thisArg, body) {
+    var f, y, t, g, _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    };
+    return(g = {
+        next: verb(0),
+        "throw": verb(1),
+        "return": verb(2)
+    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g);
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(_)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var BlurModule = /*#__PURE__*/ function() {
+    "use strict";
+    function BlurModule(worker) {
+        _class_call_check(this, BlurModule);
+        _define_property(this, "worker", void 0);
+        this.worker = worker;
+        this.worker.postMessage({
+            fn: 'init'
+        });
+    }
+    _create_class(BlurModule, [
+        {
+            key: "process",
+            value: function process(imageData) {
+                var _this = this;
+                return new Promise(function(resolve) {
+                    _this.worker.postMessage({
+                        fn: 'process',
+                        iData: imageData
+                    });
+                    _this.worker.onmessage = function() {
+                        var _ref = _async_to_generator(function(param) {
+                            var blurConfidence;
+                            return _ts_generator(this, function(_state) {
+                                blurConfidence = param.data.blurConfidence;
+                                resolve(blurConfidence);
+                                return [
+                                    2
+                                ];
+                            });
+                        });
+                        return function(_) {
+                            return _ref.apply(this, arguments);
+                        };
+                    }();
+                });
+            }
+        },
+        {
+            key: "drop",
+            value: function drop() {
+                this.worker.postMessage({
+                    fn: 'drop'
+                });
+            }
+        }
+    ]);
+    return BlurModule;
+}();
+
+// EXTERNAL MODULE: ./src/helpers/workers.ts
+var workers = __webpack_require__(4550);
+// EXTERNAL MODULE: ./src/context.ts + 6 modules
+var context = __webpack_require__(4328);
+;// CONCATENATED MODULE: ./src/loader/loaderBlur.ts
+function loaderBlur_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+    try {
+        var info = gen[key](arg);
+        var value = info.value;
+    } catch (error) {
+        reject(error);
+        return;
+    }
+    if (info.done) {
+        resolve(value);
+    } else {
+        Promise.resolve(value).then(_next, _throw);
+    }
+}
+function loaderBlur_async_to_generator(fn) {
+    return function() {
+        var self = this, args = arguments;
+        return new Promise(function(resolve, reject) {
+            var gen = fn.apply(self, args);
+            function _next(value) {
+                loaderBlur_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+            }
+            function _throw(err) {
+                loaderBlur_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+            }
+            _next(undefined);
+        });
+    };
+}
+function loaderBlur_ts_generator(thisArg, body) {
+    var f, y, t, g, _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    };
+    return g = {
+        next: verb(0),
+        "throw": verb(1),
+        "return": verb(2)
+    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(_)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+
+
+
+
+/* harmony default export */ const loaderBlur = (/*#__PURE__*/loaderBlur_async_to_generator(function() {
+    var worker, blurModule;
+    return loaderBlur_ts_generator(this, function(_state) {
+        switch(_state.label){
+            case 0:
+                return [
+                    4,
+                    (0,workers/* loadWorker */.o)("".concat(context/* default.chunkPublicPath */.Z.chunkPublicPath, "blurWorker.js"))
+                ];
+            case 1:
+                worker = _state.sent();
+                blurModule = new BlurModule(worker);
+                ModuleController/* default.setModule */.Z.setModule('module', 'blur', blurModule);
+                return [
+                    2
+                ];
+        }
+    });
+}));
+
+
+/***/ })
+
+}]);
