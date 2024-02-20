@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+Here is an example of using the IDVC2 library using cdn in the Next.js project.
+
+## How to use
+The IDVC.jsx component is the component where the IDVC2 library is initialized.
+The Lib.ts file contains the necessary config for the web library. 
+The 'useCDN' option must be set to true.
+In the 'licenseKey' option you must set your license key.
+You can configure the rest of the options as you wish.
 
 ## Getting Started
 
@@ -30,9 +38,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

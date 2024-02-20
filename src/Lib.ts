@@ -48,7 +48,7 @@ const getDefaultDocumentTypes = () => ([
 
 export const getDefaultWebLibConfiguration = () => ({
     fixFrontOrientAfterUpload: true,
-    useCDN: false,
+    useCDN: true,
     el: "videoCapturingEl",
     isShowDocumentTypeSelect: false,
     isShowGuidelinesButton: false,
@@ -56,8 +56,6 @@ export const getDefaultWebLibConfiguration = () => ({
     autoContinue: true,
     realFaceMode: 'none',
     documentTypes: getDefaultDocumentTypes(),
-    chunkPublicPath: 'https://neurons.cdn.idscan.net/2.8.5-next',
-    networkUrl: 'https://neurons.cdn.idscan.net/2.8.5-next',
     submit: (data: any) => {
         console.clear();
         alert('Check console for submitted data');
