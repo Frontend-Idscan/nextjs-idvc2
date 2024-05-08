@@ -49,6 +49,8 @@ const getDefaultDocumentTypes = () => ([
 export const getDefaultWebLibConfiguration = () => ({
     fixFrontOrientAfterUpload: true,
     useCDN: true,
+    // chunkPublicPath: 'https://localhost:5000/',
+    // networkUrl: 'https://localhost:5000/',
     el: "videoCapturingEl",
     isShowDocumentTypeSelect: false,
     isShowGuidelinesButton: false,
