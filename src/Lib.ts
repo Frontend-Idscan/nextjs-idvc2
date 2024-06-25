@@ -1,6 +1,5 @@
 const getDefaultDocumentTypes = () => ([
     {
-        isActive: true,
         type: 'ID',
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
@@ -8,17 +7,15 @@ const getDefaultDocumentTypes = () => ([
             { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     },
-    // {
-    //     isActive: true,
-    //     type: 'Passport',
-    //     steps: [
-    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-    //     ]
-    // },
     {
-        isActive: true,
+        type: 'Passport',
+        steps: [
+            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+        ]
+    },
+    {
         type: 'PassportCard',
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
@@ -26,17 +23,15 @@ const getDefaultDocumentTypes = () => ([
             { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     },
-    // {
-    //     isActive: true,
-    //     type: 'GreenCard',
-    //     steps: [
-    //         { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-    //         { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
-    //         { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
-    //     ]
-    // },
     {
-        isActive: true,
+        type: 'GreenCard',
+        steps: [
+            { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
+            { type: 'mrz', name: 'Passport Front', mode: { uploader: true, video: true } },
+            { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
+        ]
+    },
+    {
         type: 'InternationalId',
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
@@ -49,8 +44,8 @@ const getDefaultDocumentTypes = () => ([
 export const getDefaultWebLibConfiguration = () => ({
     fixFrontOrientAfterUpload: true,
     useCDN: true,
-    // chunkPublicPath: 'https://localhost:5000/',
-    // networkUrl: 'https://localhost:5000/',
+    chunkPublicPath: 'https://localhost:5000/react/',
+    networkUrl: 'https://localhost:5000/react/',
     el: "videoCapturingEl",
     isShowDocumentTypeSelect: false,
     isShowGuidelinesButton: false,
