@@ -3,8 +3,8 @@ import {getDefaultWebLibConfiguration} from '../Lib';
 
 const IDVCComponent = () => {
     useEffect(() => {
-      const scriptLink = 'https://neurons.cdn.idscan.net/2.10.0-next/idvc.js';
-      const stylesLink = 'https://neurons.cdn.idscan.net/2.10.0-next/idvc.css'
+      const scriptLink = 'https://neurons.cdn.idscan.net/2.12.2-next/idvc.js';
+      // const stylesLink = 'https://neurons.cdn.idscan.net/2.12.2-next/idvc.css'
 
       let script = document.createElement('script');
       script.src = scriptLink;
@@ -21,16 +21,16 @@ const IDVCComponent = () => {
 
       document.head.appendChild(script);
 
-      let link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = stylesLink;
-      link.onload = function () {
-        console.log('Styles have been loaded');
-      };
-      link.onerror = function (e) {
-        console.log('Error loading styles', e);
-      };
-      document.head.appendChild(link);
+      // let link = document.createElement('link');
+      // link.rel = 'stylesheet';
+      // link.href = stylesLink;
+      // link.onload = function () {
+      //   console.log('Styles have been loaded');
+      // };
+      // link.onerror = function (e) {
+      //   console.log('Error loading styles', e);
+      // };
+      // document.head.appendChild(link);
 
     }, []);
 
