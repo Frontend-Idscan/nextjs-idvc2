@@ -2,6 +2,9 @@
   "name": "nextjs-idvc-demo",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +13,6 @@
   },
   "dependencies": {
     "@types/node": "20.2.0",
-    "@types/react-dom": "^17.0.2",
     "axios": "^1.6.2",
     "copy-webpack-plugin": "^11.0.0",
     "eslint": "8.40.0",
@@ -23,6 +25,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react": "18.2.45"
+    "@types/react": "18.2.45",
+    "@types/react-dom": "^18.3.6"
   }
 }

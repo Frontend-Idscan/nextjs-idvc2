@@ -3,7 +3,7 @@ import {getDefaultWebLibConfiguration} from '../Lib';
 
 const IDVCComponent = () => {
     useEffect(() => {
-      const scriptLink = 'https://neurons.cdn.idscan.net/2.12.2-next/idvc.js';
+      const scriptLink = 'https://neurons.cdn.idscan.net/3.0.0-next/idvc.js';
       // const stylesLink = 'https://neurons.cdn.idscan.net/2.12.2-next/idvc.css'
 
       let script = document.createElement('script');

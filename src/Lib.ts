@@ -3,7 +3,7 @@ const getDefaultDocumentTypes = () => ([
         type: 'ID',
         steps: [
             { type: 'front', name: 'Document Front', mode: { uploader: true, video: true } },
-            { type: 'pdf', name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
+            { type: 'pdf', enableFourCornerCapture: true, name: 'Document PDF417 Barcode', mode: { uploader: true, video: true } },
             { type: 'face', name: 'Face', mode: { uploader: true, video: true } }
         ]
     },
